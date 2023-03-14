@@ -1,5 +1,7 @@
 import React, { FC, HTMLAttributes } from "react";
 import { FontsEnum } from "@/features/FontChanger/types";
+import { ArrowIcon } from "@/shared/ui";
+import classNames from "classnames";
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
   shown: boolean;
@@ -22,10 +24,20 @@ export const FontChangerButton: FC<Props> = ({
   return (
     <button
       onClick={(event) => handleClick(event)}
-      className="capitalize text-xl font-bold"
+      className="capitalize text-xl font-bold flex items-center gap-4"
       {...props}
     >
       {fontCategory}
+      <span
+        className={classNames(
+          {
+            "rotate-180": shown,
+          },
+          "text-purple-400 transition-transform"
+        )}
+      >
+        <ArrowIcon />
+      </span>
     </button>
   );
 };
