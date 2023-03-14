@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Dropdown } from "@/shared/ui/Dropdown";
+import { Dropdown } from "@/shared/ui";
 import { FontsEnum } from "../../types";
 import classNames from "classnames";
 
@@ -20,7 +20,7 @@ export const FontChangerDropdown: FC<Props> = ({
     <Dropdown
       shown={shown}
       onShownChange={onShownChange}
-      className="bg-gray-200 rounded-lg"
+      className="bg-gray-100 rounded-lg shadow-xl dark:bg-gray-900"
     >
       <ul className="text-xl">
         <li>
@@ -28,9 +28,9 @@ export const FontChangerDropdown: FC<Props> = ({
             onClick={() => setFontCategory(FontsEnum.SANS)}
             className={classNames(
               {
-                "bg-purple-400 text-white": fontCategory === FontsEnum.SANS,
+                "bg-purple-500 text-white": fontCategory === FontsEnum.SANS,
               },
-              "capitalize hover:bg-purple-400 hover:text-white w-full pl-4 pr-20 py-2 text-left rounded-t-lg"
+              "capitalize hover:bg-purple-500 hover:text-white w-full pl-4 pr-20 py-2 text-left rounded-t-lg font-sans"
             )}
           >
             {FontsEnum.SANS}
@@ -41,9 +41,9 @@ export const FontChangerDropdown: FC<Props> = ({
             onClick={() => setFontCategory(FontsEnum.SERIF)}
             className={classNames(
               {
-                "bg-purple-400 text-white": fontCategory === FontsEnum.SERIF,
+                "bg-purple-500 text-white": fontCategory === FontsEnum.SERIF,
               },
-              "capitalize hover:bg-purple-400 hover:text-white w-full pl-4 pr-20 py-2 text-left"
+              "capitalize hover:bg-purple-500 hover:text-white w-full pl-4 pr-20 py-2 text-left font-serif"
             )}
           >
             {FontsEnum.SERIF}
@@ -54,9 +54,9 @@ export const FontChangerDropdown: FC<Props> = ({
             onClick={() => setFontCategory(FontsEnum.MONO)}
             className={classNames(
               {
-                "bg-purple-400 text-white": fontCategory === FontsEnum.MONO,
+                "bg-purple-500 text-white": fontCategory === FontsEnum.MONO,
               },
-              "capitalize hover:bg-purple-400 hover:text-white w-full pl-4 pr-20 py-2 text-left rounded-b-lg"
+              "capitalize hover:bg-purple-500 hover:text-white w-full pl-4 pr-20 py-2 text-left rounded-b-lg font-mono"
             )}
           >
             {FontsEnum.MONO}

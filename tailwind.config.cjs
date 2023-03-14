@@ -5,7 +5,14 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        padding: {
+          DEFAULT: "0.5rem"
+        }
+      }
+    },
   },
+  darkMode: "class",
   plugins: [],
 }
