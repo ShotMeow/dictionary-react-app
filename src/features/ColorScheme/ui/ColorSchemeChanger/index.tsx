@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { useColorScheme } from "@/features/ColorScheme/hooks/useColorScheme";
 import { Checkbox } from "@/shared/ui";
 import { ColorSchemeEnum } from "@/features/ColorScheme/types";
-import { MoonIcon } from "@/shared/ui/Icons/MoonIcon/MoonIcon";
+import { MoonIcon } from "@/shared/ui";
 
 export const ColorSchemeChanger: FC = () => {
   const { colorScheme, setColorScheme } = useColorScheme();

@@ -5,7 +5,7 @@ import { ColorSchemeChanger } from "@/features/ColorScheme";
 
 export const Header: FC = () => {
   return (
-    <header className="flex items-center justify-between my-4">
+    <header className="relative flex items-center justify-between my-4 z-50">
       <Logo />
       <div className="flex items-center gap-4 md:gap-10">
         <FontChanger />

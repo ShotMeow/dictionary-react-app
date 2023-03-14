@@ -10,6 +10,7 @@ import {
 } from "@/features/FontChanger";
 
 import "./styles/globals.css";
+import { HomePage } from "@/pages/HomePage";
 
 export const App: FC = () => {
   const { fontCategory } = useContext(FontContext) as FontContextType;
@@ -26,6 +27,7 @@ export const App: FC = () => {
       )}
     >
       <Header />
+      <HomePage />
     </div>
   );
 };

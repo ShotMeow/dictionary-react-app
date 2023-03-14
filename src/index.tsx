@@ -3,12 +3,17 @@ import ReactDOM from "react-dom/client";
 
 import { App } from "./app";
 import { FontProvider } from "@/features/FontChanger";
+import { Provider } from "react-redux";
+import { store } from "@/app/store";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
-  <FontProvider>
-    <App />
-  </FontProvider>
+  <Provider store={store}>
+    <FontProvider>
+      <App />
+    </FontProvider>
+  </Provider>
 );
