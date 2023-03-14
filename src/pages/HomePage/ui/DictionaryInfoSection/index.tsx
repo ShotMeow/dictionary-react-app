@@ -32,9 +32,9 @@ export const DictionaryInfoSection: FC = () => {
     <section className="my-20">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-6xl">{dictionary[0].word}</h1>
+          <h1 className="text-3xl md:text-6xl">{dictionary[0].word}</h1>
           {dictionary[0].phonetic && (
-            <p className="text-2xl text-purple-500 mt-6">
+            <p className="text-xl md:text-2xl text-purple-500 mt-6">
               {dictionary[0].phonetic}
             </p>
           )}
