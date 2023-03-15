@@ -87,7 +87,7 @@ export const DictionaryInfoSection: FC = () => {
           </div>
         ))}
       </div>
-      <footer className="border-t-2 mt-10">
+      <footer className="border-t-2 border-black/10 dark:border-white/10 mt-10">
         <div className="flex flex-col md:flex-row gap-2 md:gap-4 mt-4 text-neutral-600 dark:text-neutral-400">
           <h4>Source</h4>
           <a
