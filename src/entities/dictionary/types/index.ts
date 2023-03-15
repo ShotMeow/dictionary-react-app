@@ -5,8 +5,8 @@ interface LicenseType {
 
 interface PhoneticType {
   audio: string;
-  sourceUrl: string;
-  license: LicenseType;
+  sourceUrl?: string;
+  license?: LicenseType;
   text: string;
 }
 
@@ -34,5 +34,5 @@ export interface DictionaryType {
 }
 
 export interface DictionarySliceType {
-  dictionary: DictionaryType[] | null;
+  dictionary: DictionaryType | null;
 }

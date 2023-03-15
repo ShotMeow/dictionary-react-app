@@ -10,9 +10,8 @@ export const fetchDictionary = createAsyncThunk<void, string>(
   async (word, thunk) => {
     const response = await fetch(`${API_URL}/${word}`);
     const data: DictionaryType[] = await response.json();
-    console.log(data);
     if (response.ok) {
-      thunk.dispatch(setDictionaries(data));
+      thunk.dispatch(setDictionaries(data[0]));
     } else {
       thunk.dispatch(clearDictionaries());
     }

@@ -10,7 +10,7 @@ export const dictionarySlice = createSlice({
   name: "dictionary",
   initialState,
   reducers: {
-    setDictionaries: (state, { payload }: PayloadAction<DictionaryType[]>) => {
+    setDictionaries: (state, { payload }: PayloadAction<DictionaryType>) => {
       state.dictionary = payload;
     },
     clearDictionaries: (state) => {
