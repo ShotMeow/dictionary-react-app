@@ -45,7 +45,9 @@ export const DictionaryInfoSection: FC = () => {
         {dictionary.meanings.map((meaning) => (
           <div className="space-y-8" key={meaning.partOfSpeech}>
             <div className="flex items-center gap-10">
-              <h2 className="text-2xl font-bold">{meaning.partOfSpeech}</h2>
+              <h2 className="text-2xl font-bold shrink-0">
+                {meaning.partOfSpeech}
+              </h2>
               <div className="h-0.5 w-full bg-black/10 dark:bg-white/10" />
             </div>
             {Boolean(meaning.definitions.length) && (
