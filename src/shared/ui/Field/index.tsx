@@ -9,7 +9,7 @@ export const Field: FC<Props> = ({ inputValue, setInputValue, ...props }) => {
   return (
     <label className="w-full relative">
       <input
-        className="w-full bg-zinc-100 dark:bg-zinc-700 rounded-2xl h-14 pl-4 text-lg font-bold"
+        className="w-full bg-neutral-100 dark:bg-neutral-700 rounded-2xl h-14 pl-4 text-lg font-bold"
         type="text"
         value={inputValue}
         onChange={(event) => setInputValue(event.target.value)}

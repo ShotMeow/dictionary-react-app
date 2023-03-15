@@ -20,7 +20,7 @@ export const FontChangerDropdown: FC<Props> = ({
     <Dropdown
       shown={shown}
       onShownChange={onShownChange}
-      className="bg-zinc-100 rounded-lg shadow-xl dark:bg-zinc-900"
+      className="bg-neutral-100 rounded-lg shadow-xl dark:bg-neutral-900"
     >
       <ul className="text-xl">
         <li>

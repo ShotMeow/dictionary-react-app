@@ -8,7 +8,7 @@ interface Props extends HTMLAttributes<HTMLButtonElement> {
 export const Checkbox: FC<Props> = ({ checked, ...props }) => {
   return (
     <button {...props}>
-      <div className="relative w-16 h-8 bg-zinc-700 dark:bg-purple-500 rounded-full flex items-center cursor-pointer">
+      <div className="relative w-16 h-8 bg-neutral-700 dark:bg-purple-500 rounded-full flex items-center cursor-pointer">
         <div
           className={classNames(
             {
