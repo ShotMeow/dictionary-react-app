@@ -1,7 +1,7 @@
 <h1 align="center">Dictionary Web Application</h1>
 
 <h2>О проекте</h2>
-<p>Dictionary Web Application - пет-проект, реализованный на основе React.js + TypeScript с использованием архитектурного подхода Feature Sliced Design.</p>
+<p>Dictionary Web Application - пет-проект, реализованный на основе React.js + TypeScript с использованием архитектурного подхода Feature Sliced Design и Free Dictionary API.</p>
 
 <h2>Стэк технологий</h2>
 <ul>
@@ -18,3 +18,11 @@
 <img src="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/a6rgn13dkuwmpdxngiaj.jpg">
 <img src="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/ktztuhkskeanuokr7bdw.jpg">
 </div>
+
+<h2 align="center">Запуск репозитория</h2>
+
+```bash
+npm install // Установка необходимых пакетов
+
+npm run dev // Запуск сервера разработки
+```
